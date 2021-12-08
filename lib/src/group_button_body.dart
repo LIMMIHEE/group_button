@@ -157,7 +157,6 @@ class _GroupButtonBodyState extends State<GroupButtonBody> {
         selectedShadow: widget.selectedShadow,
         unselectedShadow: widget.unselectedShadow,
         height: widget.buttonHeigth,
-        width: widget.buttonWidth,
         textAlign: widget.textAlign,
         textPadding: widget.textPadding,
         alignment: widget.alignment,
