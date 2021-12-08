@@ -66,6 +66,7 @@ class GroupCustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Container(
+       height: height,
       decoration: BoxDecoration(
         borderRadius: borderRadius ?? BorderRadius.circular(30),
         boxShadow: _boxShadow,
@@ -76,7 +77,7 @@ class GroupCustomButton extends StatelessWidget {
           elevation: elevation ?? 0.0,
           primary: _getBackGroundColor(theme),
           shape: _buildShape(),
-          padding: EdgeInsets.only(left: 5,right: 5,top: 5,bottom: 5),
+          padding: (width != null || height != null) ? EdgeInsets.zero : null,
           alignment: (width != null || height != null) ? alignment : null,
         ),
         child: Padding(
