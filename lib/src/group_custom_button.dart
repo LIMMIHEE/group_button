@@ -67,7 +67,7 @@ class GroupCustomButton extends StatelessWidget {
     final theme = Theme.of(context);
     return Container(
       height: height,
-      width: width,
+  
       decoration: BoxDecoration(
         borderRadius: borderRadius ?? BorderRadius.circular(30),
         boxShadow: _boxShadow,
